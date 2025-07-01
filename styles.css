@@ -20,7 +20,7 @@ body {
   	background-repeat: repeat;
 	background-size: 35px;
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: auto;
 }
 
 .navbar-container {
@@ -69,6 +69,11 @@ body {
 .social-icon {
 	width: 44px;
 	height: 44px;
+	transition: transform 0.3s ease;
+}
+
+.social-icon:hover{
+	transform: scale(1.1);
 }
 
 .contact-email a {
@@ -87,6 +92,14 @@ body {
 .email-text {
 	font-size: 1.25rem;
 	font-weight: bold;
+}
+
+.contact-email {
+	transition: transform 0.3s ease;
+}
+
+.contact-email:hover {
+	transform: scale(1.1);
 }
 
 .logo-wrapper {
@@ -132,6 +145,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
+	
 }
 
 .nav-links a {
@@ -154,6 +168,21 @@ body {
 	font-weight: bold;
 }
 
+.nav-menu {
+	transition: transform 0.3s ease;
+}
+
+.nav-menu:hover {
+	transform: scale(1.1);
+}
+
+.nav-order {
+	transition: transform 0.3s ease;
+}
+
+.nav-order:hover {
+	transform: scale(1.1);
+}
 @media (max-width: 768px) {
 	.navbar-container {
     display: flex;
