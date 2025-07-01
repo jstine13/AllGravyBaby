@@ -16,7 +16,7 @@ body {
 	border-right: 1px solid rgb(255, 169, 160); */
 
 	background-color: rgb(195, 228, 240);
-	background-image: url('assets/dots-nine-fill-svgrepo-com.svg');
+	background-image: url('assets/rangoli-pattern-svgrepo-com.svg');
   	background-repeat: repeat;
 	background-size: 35px;
 	max-width: 1200px;
@@ -119,7 +119,6 @@ body {
 .logo-image {
 	width: 100%;
 	height: auto;
-	max-height: 200px;
 	display: block;
 }
 
@@ -183,13 +182,29 @@ body {
 .nav-order:hover {
 	transform: scale(1.1);
 }
+
+.main-header {
+	border: 1px solid rgb(255, 169, 160);
+	font-family: 'Lobster', sans-serif;
+	font-size: 2.5rem;
+	background-color: rgb(255, 204, 133);
+	font-weight: lighter;
+	padding-block: .25rem;
+	padding-inline: 5rem;
+	text-align: center;
+	width:fit-content;
+	margin: 0 auto;
+	margin-top: .5rem;
+	border-radius: 4px;
+}
 @media (max-width: 768px) {
 	.navbar-container {
-    display: flex;
+    	display: flex;
 		flex-direction: column;
 		align-items: stretch;
 		text-align: center;
-    min-width: none;
+    	min-width: none;
+		margin-bottom: .5rem;
 	}
 
 	.navbar-left {
@@ -213,14 +228,13 @@ body {
 
 	.navbar-section {
 		text-align: center !important;
-    min-height: auto;
-    padding: 0.5rem 1rem;
+    	min-height: auto;
 	}
 
 	.logo-image {
 		width: 100%;
 		height: auto;
-		max-height: 100px;
+		max-height: 150px;
 		display: block;
 	}
 
