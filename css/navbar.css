@@ -1,21 +1,7 @@
-body {
-	margin: 10px;
-	font-family: sans-serif;
-}
-
-.container {
-	max-width: 1000px;
-	margin: 0 auto;
-	padding: 0 1rem;
-}
-
 .navbar {
 	border: 1px solid rgb(255, 169, 160);
-	/* border-bottom: 1px solid rgb(255, 169, 160);
-	border-left: 1px solid rgb(255, 169, 160);
-	border-right: 1px solid rgb(255, 169, 160); */
 	background-color: rgb(195, 228, 240);
-	background-image: url('assets/rangoli-pattern-svgrepo-com.svg');
+	background-image: url('/assets/navbar_background_img.svg');
   	background-repeat: repeat;
 	background-size: 35px;
 	max-width: 1200px;
@@ -41,7 +27,6 @@ body {
 
 .navbar-left {
 	justify-content: flex-start;
-	/* padding-left: .75rem; */
 }
 
 .navbar-center {
@@ -69,13 +54,7 @@ body {
 .social-icon {
 	width: 44px;
 	height: 44px;
-	transition: transform 0.3s ease;
 }
-
-.social-icon:hover{
-	transform: scale(1.1);
-}
-
 .contact-email a {
 	display: flex;
 	align-items: center;
@@ -89,19 +68,6 @@ body {
 	height: 48px;
 }
 
-.email-text {
-	font-size: 1.25rem;
-	font-weight: bold;
-}
-
-.contact-email {
-	transition: transform 0.3s ease;
-}
-
-.contact-email:hover {
-	transform: scale(1.1);
-}
-
 .logo-wrapper {
 	text-decoration: none;
 	display: block;
@@ -113,7 +79,6 @@ body {
 	align-items: center;
 	width: 100%;
 	max-width: 400px;
-	/* height: 200px; */
 }
 
 .logo-image {
@@ -127,14 +92,14 @@ body {
 	font-size: 6rem;
 	white-space: nowrap;
 	text-align: center;
-  margin-bottom: -1rem;
-  font-weight: lighter;
+  	margin-bottom: -1rem;
+  	font-weight: lighter;
 	margin-top: 0.5rem;
 	color: black;
 }
 .logo-text a {
-  text-decoration: none;
-  color: inherit;
+  	text-decoration: none;
+  	color: inherit;
 }
 
 .nav-links {
@@ -159,49 +124,23 @@ body {
 .nav-icon {
 	width: 48px;
 	height: 48px;
-	/* display: inline-block; */
 }
 
-.nav-text {
-	font-size: 1.25rem;
+.nav-menu, .nav-order, .contact-email, .social-icon {
+	transition: transform 0.3s ease;
+}
+
+.nav-menu:hover, .nav-order:hover, .contact-email:hover, .social-icon:hover {
+	transform: scale(1.1);
+}
+
+.nav-text, .email-text {
 	font-weight: bold;
-	/* border-left: 5px solid rgb(255, 169, 160);
-	padding-left:.35rem; */
+	font-size: 1.25rem;
 }
 
-.nav-menu {
-	transition: transform 0.3s ease;
-}
-
-.nav-menu:hover {
-	transform: scale(1.1);
-}
-
-.nav-order {
-	transition: transform 0.3s ease;
-}
-
-.nav-order:hover {
-	transform: scale(1.1);
-}
-
-.main-header {
-	border: 1px solid rgb(255, 169, 160);
-	font-family: 'Lobster', sans-serif;
-	font-size: 2.5rem;
-	background-color: rgb(255, 204, 133);
-	font-weight: lighter;
-	padding-block: .25rem;
-	padding-inline: 5rem;
-	text-align: center;
-	width:fit-content;
-	margin: 0 auto;
-	margin-top: .5rem;
-	
-}
 @media (max-width: 768px) {
 	.navbar-container {
-		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 	}
@@ -229,11 +168,11 @@ body {
 		width: 100%;
 		order: 1;
 		margin-bottom: none;
-		justify-content: center;
+		
 	}
 
 	.logo-text {
-		font-size: clamp(3.4rem, 12vw, 4rem);
+		font-size: clamp(3.2rem, 12vw, 4rem);
 		white-space: wrap;
 	}
 
@@ -275,7 +214,7 @@ body {
 	}
 
 	.navbar-section {
-		text-align: center !important;
+		text-align: center ;
     	min-height: auto;
 	}
 
@@ -284,16 +223,7 @@ body {
 	}
 
 	.logo-text {
-		font-size: 2.75rem !important;
+		font-size: 2.75rem ;
 		white-space: wrap;
 	}
-
-	.main-header {
-    	padding-inline: 3rem;
-    	font-size: 1.75rem;	
-  	}
-  
-  /* .logo-container {
-    height: auto;
-  } */
 }
