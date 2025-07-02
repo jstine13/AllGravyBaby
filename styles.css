@@ -14,7 +14,6 @@ body {
 	/* border-bottom: 1px solid rgb(255, 169, 160);
 	border-left: 1px solid rgb(255, 169, 160);
 	border-right: 1px solid rgb(255, 169, 160); */
-
 	background-color: rgb(195, 228, 240);
 	background-image: url('assets/rangoli-pattern-svgrepo-com.svg');
   	background-repeat: repeat;
@@ -42,6 +41,7 @@ body {
 
 .navbar-left {
 	justify-content: flex-start;
+	/* padding-left: .75rem; */
 }
 
 .navbar-center {
@@ -55,7 +55,7 @@ body {
 	border: none;
 }
 
-.socials {
+.social-contacts {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
@@ -112,7 +112,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
-	max-width: 300px;
+	max-width: 400px;
 	/* height: 200px; */
 }
 
@@ -159,12 +159,14 @@ body {
 .nav-icon {
 	width: 48px;
 	height: 48px;
-	display: inline-block;
+	/* display: inline-block; */
 }
 
 .nav-text {
 	font-size: 1.25rem;
 	font-weight: bold;
+	/* border-left: 5px solid rgb(255, 169, 160);
+	padding-left:.35rem; */
 }
 
 .nav-menu {
@@ -199,6 +201,50 @@ body {
 }
 @media (max-width: 768px) {
 	.navbar-container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.navbar-section {
+		flex:unset;
+		width: auto;
+		
+	}
+
+	.navbar-left, .navbar-right {
+		order: 2;
+	}
+
+	.navbar-left {
+		justify-content: flex-end;
+		margin-right: 25px;
+	}
+
+	.navbar-right {
+		margin-left: 25px;
+	}
+	
+	.navbar-center {
+		width: 100%;
+		order: 1;
+		margin-bottom: none;
+		justify-content: center;
+	}
+
+	.logo-text {
+		font-size: clamp(3.4rem, 12vw, 4rem);
+		white-space: wrap;
+	}
+
+	.logo-container {
+		max-width: 200px;
+	}
+}
+
+
+@media (max-width: 425px) {
+	.navbar-container {
     	display: flex;
 		flex-direction: column;
 		align-items: stretch;
@@ -210,6 +256,7 @@ body {
 	.navbar-left {
 		order: 3;
 		justify-content: center;
+		margin-right: 0;
 	}
 
 	.navbar-center {
@@ -219,9 +266,10 @@ body {
 	.navbar-right {
 		order: 2;
 		justify-content: center;
+		margin-left: 0;
 	}
 
-	.socials {
+	.social-contacts {
 		align-items: center;
 		text-align: center;
 	}
@@ -231,11 +279,8 @@ body {
     	min-height: auto;
 	}
 
-	.logo-image {
-		width: 100%;
-		height: auto;
-		max-height: 150px;
-		display: block;
+	.logo-container {
+		max-width: 150px;
 	}
 
 	.logo-text {
