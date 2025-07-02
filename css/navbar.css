@@ -1,7 +1,7 @@
 .navbar {
 	border: 1px solid rgb(255, 169, 160);
 	background-color: rgb(195, 228, 240);
-	background-image: url('/assets/navbar_background_img.svg');
+	background-image: url('assets/navbar_background_img.svg');
   	background-repeat: repeat;
 	background-size: 35px;
 	max-width: 1200px;
