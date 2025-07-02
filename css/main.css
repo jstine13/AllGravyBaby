@@ -7,6 +7,7 @@ body {
 	max-width: 1000px;
 	margin: 0 auto;
 	padding: 0 1rem;
+    padding-top: .5rem;
 }
 
 .main-header {
@@ -20,12 +21,40 @@ body {
 	text-align: center;
 	width:fit-content;
 	margin: 0 auto;
-	margin-top: .5rem;
 }
 
+#backToTopBtn {
+	position: fixed;
+	top: .5rem;
+	right: 1rem;
+    border: none;
+    background: none;
+	cursor: pointer;
+	display: none;
+	z-index: 999;
+	transition: opacity 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+#backToTopBtn.show {
+	display: block;
+}
+
+#backToTopBtn:hover {
+    transform: scale(1.1);
+}
+
+.back-to-top-icon {
+    width: 48px;
+    height: 48px;
+}
 @media (max-width: 425px) {
     .main-header {
     	padding-inline: 3rem;
     	font-size: 1.75rem;	
   	}
+    .back-to-top-icon {
+    width: 40px;
+    height: 40px;
+}
 }
