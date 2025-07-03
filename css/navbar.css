@@ -1,5 +1,7 @@
 .navbar {
-	border: 1px solid rgb(255, 169, 160);
+	border-style: solid;
+	border-color: rgb(255, 169, 160);
+	border-width: 3px 2px 6px 5px;
 	background-color: rgb(195, 228, 240);
 	background-image: url('../assets/navbar_background_img.svg');
   	background-repeat: repeat;
