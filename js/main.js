@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	const main = document.querySelector("main");
 
 	window.addEventListener("scroll", function () {
-		if (main.getBoundingClientRect().top <= 2) {
+		if (main.getBoundingClientRect().top <= 1) {
 		  backToTopBtn.classList.add("show");
 		} else {
 			backToTopBtn.classList.remove("show");
@@ -17,10 +17,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
   const orderNowBtn = document.getElementById("orderPopUp");
-  const graviesSection = document.querySelector("#gravyShowcase");
+  const caughtOrder = document.querySelector("#orderCatcher");
 
   window.addEventListener("scroll", function () {
-    if (graviesSection.getBoundingClientRect().top <= 25) {
+    if (caughtOrder.getBoundingClientRect().top <= 1) {
       orderNowBtn.classList.add("show");
     } else {
       orderNowBtn.classList.remove("show");
