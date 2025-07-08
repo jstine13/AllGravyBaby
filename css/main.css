@@ -25,10 +25,33 @@ body {
 	margin: 0 auto;
 }
 
+.the-gravies {
+	font-size:4rem;
+	text-align: center;
+}
+.gravy-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+  margin-inline:2rem;
+}
+
+.gravy-card {
+	border: 1px dashed rgb(255, 169, 160);
+	text-align: center;
+}
+
+
+.gravy-image {
+	width: 44px;
+	height: 44px;
+}
+
 #backToTopBtn {
 	position: fixed;
 	top: .5rem;
-	right: 1rem;
+	right: .5rem;
     border: none;
     background: none;
 	cursor: pointer;
@@ -50,13 +73,25 @@ body {
     width: 48px;
     height: 48px;
 }
+
+@media (max-width: 768px) {
+  .gravy-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 425px) {
     .main-header {
     	padding-inline: 3rem;
     	font-size: 1.75rem;	
   	}
+
     .back-to-top-icon {
     width: 40px;
     height: 40px;
-}
+	}
+
+	.gravy-cards {
+    grid-template-columns: 1fr;
+	}
 }
