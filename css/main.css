@@ -1,90 +1,99 @@
 body {
-	margin: 10px;
-	font-family: sans-serif;
+  margin: 10px;
+  font-family: sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .container {
-	max-width: 1000px;
-	margin: 0 auto;
-	padding: 0 1rem;
-    padding-top: .5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  padding-top: 0.5rem;
 }
 
 .main-header {
-	border-style: solid;
-	border-width: 2px 1px 4px 3px;
-	border-color: rgb(255, 169, 160);
-	font-family: 'Lobster', sans-serif;
-	font-size: 2.5rem;
-	background-color: rgb(255, 204, 133);
-	font-weight: lighter;
-	padding-block: .25rem;
-	padding-inline: 5rem;
-	text-align: center;
-	width:fit-content;
-	margin: 0 auto;
+  border-style: solid;
+  border-width: 2px 1px 4px 3px;
+  border-color: rgb(255, 169, 160);
+  font-family: 'Lobster', sans-serif;
+  font-size: 2.5rem;
+  color: black;
+  background-color: rgb(255, 204, 133);
+  font-weight: lighter;
+  padding-block: 0.25rem;
+  padding-inline: 5rem;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
 }
 
-.index-header-text {
-	
-}
+.index-header-text {}
 
 .gravy-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-top: 1rem;
-  margin-inline:2rem;
+  margin-inline: 2rem;
 }
 
 .gravy-card {
-	border: 20px solid transparent;
-	text-align: center;
-	border-image: url("../assets/cardframe.svg");
-	border-image-slice: 250;
+  border: 20px solid transparent;
+  text-align: center;
+  border-image: url("../assets/cardframe.svg");
+  border-image-slice: 250;
 }
-
 
 .gravy-image {
-	width: 60px;
-	height: 60px;
+  width: 60px;
+  height: 60px;
 }
-#orderPopUp {
-	position: fixed;
-	top: .1rem;
-	left: .1rem;
-	cursor: pointer;
-	border: none;
-	background: none;
-	display: none;
-	z-index:997;
-	transition: opacity 0.3s ease;
-	transition: trnasform 0.3s ease;
-}
+
 #backToTopBtn {
-	position: fixed;
-	top: .1rem;
-	right: .1rem;
-    border: none;
-    background: none;
-	cursor: pointer;
-	display: none;
-	z-index: 999;
-	transition: opacity 0.3s ease;
-    transition: transform 0.3s ease;
+  position: fixed;
+  top: 0.1rem;
+  right: 0.1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+  z-index: 999;
+  transition: transform 0.3s ease;
 }
 
-#backToTopBtn.show, #orderPopUp.show {
-	display: block;
-}
-
-#backToTopBtn:hover, #orderPopUp:hover {
-    transform: scale(1.1);
+#backToTopBtn:hover {
+  transform: scale(1.1);
 }
 
 .back-to-top-icon {
-    width: 44px;
-    height: 44px;
+  width: 44px;
+  height: 44px;
+}
+
+#orderPopUp {
+  position: fixed;
+  top: 0.1rem;
+  left: 0.1rem;
+  cursor: pointer;
+  border: none;
+  background: none;
+  display: none;
+  z-index: 997;
+}
+
+#backToTopBtn.show,
+#orderPopUp.show {
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -94,12 +103,12 @@ body {
 }
 
 @media (max-width: 425px) {
-    .main-header {
-    	padding-inline: 3rem;
-    	font-size: 1.75rem;	
-  	}
+  .main-header {
+    padding-inline: 3rem;
+    font-size: 1.75rem;
+  }
 
-	.gravy-cards {
+  .gravy-cards {
     grid-template-columns: 1fr;
-	}
+  }
 }
