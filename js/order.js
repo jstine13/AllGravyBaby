@@ -53,10 +53,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   placeOrderBtn.addEventListener("click", function () {
     if (total === 0) {
-      alert("You haven’t added anything to your order yet.");
+      alert("you haven’t added anything to your order yet.");
       return;
     }
-    alert("Thanks! Your order will be ready soon.");
+    alert("thanks! your order will be ready soon.");
     setTimeout(() => {
       window.location.href = "index.html";
     }, 1500);

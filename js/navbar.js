@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const includes = document.querySelectorAll('[data-include]');
+  const includes = document.querySelectorAll("[data-include]");
 
   includes.forEach(el => {
-    const file = el.getAttribute('data-include');
+    const file = el.getAttribute("data-include");
+
     fetch(file)
       .then(res => res.text())
       .then(html => {
         el.innerHTML = html;
       })
-      .catch(err => console.warn(`Include error: ${file}`, err));
+      .catch(err => console.warn(`include error: ${file}`, err));
   });
 });
