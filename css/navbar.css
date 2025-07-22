@@ -8,6 +8,10 @@
 	background-size: 35px;
 	max-width: 1200px;
 	margin: auto;
+	color: #222;
+	font-family: 'Segoe UI', Arial, sans-serif;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
 .navbar-container {
@@ -85,7 +89,7 @@
 }
 
 .logo-text {
-	font-family: 'Lobster', sans-serif;
+	font-family: 'Lobster', cursive;
 	font-size: 6rem;
 	white-space: nowrap;
 	text-align: center;
@@ -136,6 +140,7 @@
 	font-size: 1.25rem;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
 	.navbar-container {
 		flex-wrap: wrap;

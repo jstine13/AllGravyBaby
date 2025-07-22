@@ -1,8 +1,9 @@
 body {
   margin: 10px;
-  font-family: sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   font-size: 18px;
   line-height: 1.6;
+  color: #222;
 }
 
 .visually-hidden {
@@ -25,11 +26,10 @@ body {
   border-style: solid;
   border-width: 2px 1px 4px 3px;
   border-color: rgb(255, 169, 160);
-  font-family: 'Lobster', sans-serif;
+  font-family: 'Lobster', cursive;
   font-size: 2.5rem;
-  color: black;
+  color: #222;
   background-color: rgb(255, 204, 133);
-  font-weight: lighter;
   padding-block: 0.25rem;
   padding-inline: 5rem;
   text-align: center;
@@ -37,7 +37,9 @@ body {
   margin: 0 auto;
 }
 
-.index-header-text {}
+.index-header-text {
+  /* ...existing code... */
+}
 
 .gravy-cards {
   display: grid;
@@ -49,14 +51,121 @@ body {
 
 .gravy-card {
   border: 20px solid transparent;
-  text-align: center;
   border-image: url("../assets/cardframe.svg");
   border-image-slice: 250;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: rgb(255, 250, 242);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.gravy-card:hover {
+  transform: scale(1.02);
+}
+
+.gravy-card h3 {
+  font-family: 'Lobster', cursive;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+  font-weight: normal;
+}
+
+.gravy-card p {
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.4;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 .gravy-image {
   width: 60px;
   height: 60px;
+  margin-bottom: 0.75rem;
+}
+
+
+/* contact */
+
+.contact-section {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fffaf2;
+  border: 2px solid rgb(255, 204, 133); 
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.contact-section h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  text-align: center;
+  color: #222;
+  margin-bottom: 1rem;
+  font-weight: normal;
+}
+
+.contact-form p {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #fff;
+  color: #222;
+}
+
+input:focus,
+textarea:focus {
+  border-color: rgb(255, 169, 160); /* matches border highlight */
+  outline: none;
+}
+
+button[type="submit"] {
+  background-color: rgb(255, 169, 160);
+  color: white;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: rgb(255, 140, 140);
 }
 
 #backToTopBtn {
@@ -96,9 +205,166 @@ body {
   display: block;
 }
 
+.menu-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-inline: 1rem;
+}
+
+.menu-item {
+  border: 20px solid transparent;
+  border-image: url("../assets/cardframe.svg");
+  border-image-slice: 250;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: rgb(255, 250, 242);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.menu-item:hover {
+  transform: scale(1.02);
+}
+
+.menu-item h3 {
+  font-family: 'Lobster', cursive;
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+  font-weight: normal;
+}
+
+.menu-item p {
+  font-size: 1rem;
+  color: #222;
+  line-height: 1.4;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.order-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.order-item {
+  border: 20px solid transparent;
+  border-image: url("../assets/cardframe.svg");
+  border-image-slice: 250;
+  padding: 1.5rem;
+  background-color: rgb(255, 250, 242);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.order-item h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 1.75rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+  font-weight: normal;
+}
+
+.order-item label,
+.order-item select {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.order-item select {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-family: inherit;
+}
+
+.add-btn {
+  background-color: rgb(255, 169, 160);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover {
+  background-color: rgb(255, 140, 140);
+}
+
+.receipt {
+  background-color: rgb(255, 250, 242);
+  border: 2px solid rgb(255, 204, 133);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  height: fit-content;
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.receipt h2 {
+  font-family: 'Lobster', cursive;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #222;
+  font-weight: normal;
+}
+
+#receiptList {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+#receiptList li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.receipt-total {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #222;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .gravy-cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .order-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .receipt {
+    margin-top: 2rem;
   }
 }
 
