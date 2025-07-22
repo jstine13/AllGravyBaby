@@ -57,6 +57,7 @@ body {
   background-color: var(--color-navbar-bg);
   background-image: url('../assets/navbar_background_img.svg');
   background-repeat: repeat;
+  background-position: center;
   background-size: 35px;
   max-width: 1200px;
   margin: auto;
@@ -193,6 +194,10 @@ body {
   border: 20px solid transparent;
   border-image: url("../assets/cardframe.svg") 250;
   background-color: var(--color-bg-light);
+  background-image: url('../assets/lattice-pattern.svg');
+  background-repeat: repeat;
+  background-size: 6px;
+  background-position: center;
   background-clip: padding-box;
   padding: 1.5rem;
   text-align: center;
@@ -232,8 +237,14 @@ body {
   max-width: 600px;
   margin: 2rem auto;
   padding: 2rem;
+  border: 20px solid transparent;
+  border-image: url("../assets/cardframe.svg") 250;
   background-color: var(--color-bg-light);
-  border: 2px solid var(--color-border);
+  background-image: url('../assets/lattice-pattern.svg');
+  background-repeat: repeat;
+  background-size: 6px;
+  background-position: center;
+  background-clip: padding-box;
 }
 
 .contact-section h2 {
@@ -334,33 +345,50 @@ button[type="submit"]:hover,
 
 /* receipt */
 .receipt {
-  background-color: var(--color-bg-light);
-  border: 2px solid var(--color-border);
+  background-color: #fff;
+  border: 1px dashed #aaa;
   padding: 1.5rem;
-  height: fit-content;
+  max-width: 300px;
+  width: 100%;
+  margin-top: 1.25rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  height: auto;
+  position: sticky;
+  top: 1rem;
+  align-self: start;
 }
 
 .receipt h2 {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+  text-align: center;
   margin-bottom: 1rem;
-  font-weight: normal;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+  padding-bottom: 0.5rem;
 }
 
 #receiptList {
   list-style: none;
   padding: 0;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 0;
 }
 
-#receiptList li,
-.receipt-total {
-  font-size: 1rem;
+#receiptList li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #ddd;
+  padding: 0.25rem 0;
 }
 
 .receipt-total {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  border-top: 2px solid #000;
+  padding-top: 0.5rem;
 }
 
 .order-img {
@@ -413,6 +441,11 @@ button[type="submit"]:hover,
 
   .order-grid {
     grid-template-columns: 1fr;
+  }
+   .receipt {
+    margin-inline: auto;
+    position: static;
+    box-sizing: border-box;
   }
 }
 
