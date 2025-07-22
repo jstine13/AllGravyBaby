@@ -62,6 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function validateEmail(email) {
-    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    return /@.*\./.test(email);
   }
 });

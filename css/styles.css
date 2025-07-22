@@ -212,6 +212,7 @@ body {
   font-size: 1.75rem;
   font-weight: normal;
   margin-bottom: 0.5rem;
+  margin-top: -1rem;
 }
 
 .gravy-card p,
@@ -360,6 +361,14 @@ button[type="submit"]:hover,
 .receipt-total {
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+.order-img {
+  width: 100%;
+  max-width: 200px;
+  height: auto; 
+  display: block;
+  margin: 0 auto 0.5rem;
 }
 
 /* responsive */
