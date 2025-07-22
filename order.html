@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Order your favorite gravy-smothered meals online from It's All Gravy Baby.">
     <title>Online Ordering</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"/>
@@ -13,93 +14,90 @@
   </head>
   <body>
 
-
-
-    <!-- nav section -->
-
-
-
+    <!-- navbar -->
     <div data-include="navbar.html"></div>
 
+    <!-- main content -->
+    <main id="mainContent" class="container">
+      <h1 id="pageTitle" class="visually-hidden">Order Online – Gravy Meals from It's All Gravy Baby</h1>
+      <h2 class="main-header">Start Your Gravy Order</h2>
 
+      <section class="order-grid">
+        <div class="order-form">
+          <div class="order-item">
+            <h2>Sandwich</h2>
+            <label for="gravySandwich">Choose your gravy:</label>
+            <select id="gravySandwich">
+              <option value="">-- Select Gravy --</option>
+              <option value="Classic Brown">Classic Brown</option>
+              <option value="Sawmill White">Sawmill White</option>
+              <option value="Swedish Meatball">Swedish Meatball</option>
+              <option value="Turkey">Turkey</option>
+              <option value="Vegan">Vegan</option>
+              <option value="Spicy Cajun">Spicy Cajun</option>
+            </select>
+            <button class="add-btn" data-item="Sandwich" data-price="6.99" data-select="gravySandwich">Add to Order</button>
+          </div>
 
-    <!-- main body -->
+          <div class="order-item">
+            <h2>Chicken Strips</h2>
+            <label for="gravyChicken">Choose your gravy:</label>
+            <select id="gravyChicken">
+              <option value="">-- Select Gravy --</option>
+              <option value="Classic Brown">Classic Brown</option>
+              <option value="Sawmill White">Sawmill White</option>
+              <option value="Swedish Meatball">Swedish Meatball</option>
+              <option value="Turkey">Turkey</option>
+              <option value="Vegan">Vegan</option>
+              <option value="Spicy Cajun">Spicy Cajun</option>
+            </select>
+            <button class="add-btn" data-item="Chicken Strips" data-price="7.99" data-select="gravyChicken">Add to Order</button>
+          </div>
 
-
-
-   <main id="mainContent" class="container">
-
-    <h1 id="pageTitle" class="visually-hidden">Order Online – Gravy Meals from It's All Gravy Baby</h1>
-    <h2 class="main-header">Start Your Gravy Order</h2>
-
-    <section class="order-grid">
-      <div class="order-form">
-        <div class="order-item">
-          <h2>Sandwich</h2>
-          <label for="gravySandwich">Choose your gravy:</label>
-          <select id="gravySandwich">
-            <option value="">-- Select Gravy --</option>
-            <option value="Classic Brown">Classic Brown</option>
-            <option value="Sawmill White">Sawmill White</option>
-            <option value="Swedish Meatball">Swedish Meatball</option>
-            <option value="Turkey">Turkey</option>
-            <option value="Vegan">Vegan</option>
-            <option value="Spicy Cajun">Spicy Cajun</option>
-          </select>
-          <button class="add-btn" data-item="Sandwich" data-price="6.99" data-select="gravySandwich">Add to Order</button>
+          <div class="order-item">
+            <h2>Biscuits</h2>
+            <label for="gravyBiscuits">Choose your gravy:</label>
+            <select id="gravyBiscuits">
+              <option value="">-- Select Gravy --</option>
+              <option value="Classic Brown">Classic Brown</option>
+              <option value="Sawmill White">Sawmill White</option>
+              <option value="Swedish Meatball">Swedish Meatball</option>
+              <option value="Turkey">Turkey</option>
+              <option value="Vegan">Vegan</option>
+              <option value="Spicy Cajun">Spicy Cajun</option>
+            </select>
+            <button class="add-btn" data-item="Biscuits" data-price="4.99" data-select="gravyBiscuits">Add to Order</button>
+          </div>
         </div>
 
-        <div class="order-item">
-          <h2>Chicken Strips</h2>
-          <label for="gravyChicken">Choose your gravy:</label>
-          <select id="gravyChicken">
-            <option value="">-- Select Gravy --</option>
-            <option value="Classic Brown">Classic Brown</option>
-            <option value="Sawmill White">Sawmill White</option>
-            <option value="Swedish Meatball">Swedish Meatball</option>
-            <option value="Turkey">Turkey</option>
-            <option value="Vegan">Vegan</option>
-            <option value="Spicy Cajun">Spicy Cajun</option>
-          </select>
-          <button class="add-btn" data-item="Chicken Strips" data-price="7.99" data-select="gravyChicken">Add to Order</button>
-        </div>
+        <aside class="receipt" aria-labelledby="receiptTitle">
+          <h2 id="receiptTitle">Your Receipt</h2>
+          <ul id="receiptList"></ul>
+          <p class="receipt-total">Total: $<span id="receiptTotal">0.00</span></p>
+        </aside>
+      </section>
 
-        <div class="order-item">
-          <h2>Biscuits</h2>
-          <label for="gravyBiscuits">Choose your gravy:</label>
-          <select id="gravyBiscuits">
-            <option value="">-- Select Gravy --</option>
-            <option value="Classic Brown">Classic Brown</option>
-            <option value="Sawmill White">Sawmill White</option>
-            <option value="Swedish Meatball">Swedish Meatball</option>
-            <option value="Turkey">Turkey</option>
-            <option value="Vegan">Vegan</option>
-            <option value="Spicy Cajun">Spicy Cajun</option>
-          </select>
-          <button class="add-btn" data-item="Biscuits" data-price="4.99" data-select="gravyBiscuits">Add to Order</button>
-        </div>
-      </div>
+      <!-- back to top button -->
+      <button id="backToTopBtn" aria-label="Back to Top">
+        <img src="assets/up_arrow.svg" alt="Scroll to Top" class="back-to-top-icon">
+      </button>
 
-      <aside class="receipt" aria-labelledby="receiptTitle">
-        <h2 id="receiptTitle">Your Receipt</h2>
-        <ul id="receiptList"></ul>
-        <p class="receipt-total">Total: $<span id="receiptTotal">0.00</span></p>
-      </aside>
-    </section>
+      <!-- order now popup button -->
+      <a href="order.html#mainContent" id="orderPopUp" class="nav-menu" aria-label="Order Now">
+        <img src="assets/order_icon_wbg.svg" alt="Order Now" class="nav-icon" />
+      </a>
+    </main>
 
-    <button id="backToTopBtn" aria-label="Back to Top">
-      <img src="assets/up_arrow.svg" alt="Scroll to Top" class="back-to-top-icon">
-    </button>
-  </main>
+    <!-- footer -->
+    <footer style="text-align: center; padding: 2rem 1rem; background-color: white;">
+      <p>&copy; 2025 It's All Gravy Baby. All rights reserved.<br>
+        <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">Find us on Google Maps</a>
+      </p>
+    </footer>
 
-  <footer style="text-align: center; padding: 2rem 1rem; background-color: white;">
-    <p>&copy; 2025 It's All Gravy Baby. All rights reserved.<br>
-      <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">Find us on Google Maps</a>
-    </p>
-  </footer>
-
-  <script src="js/navbar.js" defer></script>
-  <script src="js/main.js" defer></script>
-  <script src="js/order.js" defer></script>
-</body>
+    <!-- scripts -->
+    <script src="js/navbar.js" defer></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/order.js" defer></script>
+  </body>
 </html>

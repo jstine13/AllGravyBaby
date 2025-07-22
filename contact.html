@@ -11,18 +11,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/navbar.css"/>
     <link rel="stylesheet" href="css/main.css">
-
   </head>
   <body>
-  
-    <!-- navbar -->
 
+    <!-- navbar -->
     <div data-include="navbar.html"></div>
 
     <!-- main body -->
-
     <main id="mainContent" class="container">
-
       <h1 id="pageTitle" class="visually-hidden">Contact – It's All Gravy Baby Restaurant Questions & Feedback</h1>
 
       <section id="contact" class="contact-section" aria-labelledby="contactHeading">
@@ -49,17 +45,27 @@
           <button type="submit" class="submit-btn">Send Message</button>
         </form>
       </section>
+
+      <!-- back to top button -->
       <button id="backToTopBtn" aria-label="Back to Top">
         <img src="assets/up_arrow.svg" alt="Scroll to Top" class="back-to-top-icon">
       </button>
+
+      <!-- order now popup button -->
+      <a href="order.html#mainContent" id="orderPopUp" class="nav-menu" aria-label="Order Now">
+        <img src="assets/order_icon_wbg.svg" alt="Order Now" class="nav-icon" />
+      </a>
     </main>
 
+    <!-- footer -->
     <footer style="text-align: center; padding: 2rem 1rem; background-color: white;">
       <p>&copy; 2025 It's All Gravy Baby. All rights reserved.<br>
         <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">Find us on Google Maps</a>
       </p>
     </footer>
+
+    <!-- scripts -->
     <script src="js/navbar.js" defer></script>
     <script src="js/main.js" defer></script>
   </body>
-</html> 
+</html>

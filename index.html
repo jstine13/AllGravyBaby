@@ -15,25 +15,19 @@
   <body>
 
     <!-- navbar -->
-
-
     <div data-include="navbar.html"></div>
 
-
-
     <!-- main body -->
-
-
-
     <main id="mainContent" class="container">
-
       <h1 id="pageTitle" class="visually-hidden">Home - Gravy Comfort Food Restaurant | It's All Gravy Baby</h1>
       
-      <h2 class="main-header ">About Us</h2>
-      <p class="index-header-text">At It's All Gravy Baby, we believe everything is better with gravy. From homemade sauces to comfort food, we serve big portions with bold flavors because when there's gravy, "It's All Gravy Baby".</p>
+      <h2 class="main-header">About Us</h2>
+      <p class="index-header-text">
+        At It's All Gravy Baby, we believe everything is better with gravy. From homemade sauces to comfort food, we serve big portions with bold flavors because when there's gravy, "It's All Gravy Baby".
+      </p>
 
-      <section id="" class="gravy-showcase" aria-labelledby="graviesHeading" role="region">
-        <h2 class="main-header">Signature Gravy Recipes</h2>
+      <section class="gravy-showcase" aria-labelledby="graviesHeading" role="region">
+        <h2 class="main-header" id="graviesHeading">Signature Gravy Recipes</h2>
         <div class="gravy-cards">
 
           <div class="gravy-card">
@@ -74,22 +68,27 @@
 
         </div>
       </section>
+
+      <!-- back to top button -->
       <button id="backToTopBtn" aria-label="Back to Top">
         <img src="assets/up_arrow.svg" alt="Scroll to Top" class="back-to-top-icon">
       </button>
-      <a href="order.html#mainContent">
-        <button id="orderPopUp" aria-label="Order Now">
-          <img src="assets/order_icon_wbg.svg" alt="Order Now" class="nav-icon nav-order">
-        </button>
+
+      <!-- order now popup button -->
+      <a href="order.html#mainContent" id="orderPopUp" class="nav-menu" aria-label="Order Now">
+        <img src="assets/order_icon_wbg.svg" alt="Order Now" class="nav-icon" />
       </a>
     </main>
 
+    <!-- footer -->
     <footer style="text-align: center; padding: 2rem 1rem; background-color: white;">
       <p>&copy; 2025 It's All Gravy Baby. All rights reserved.<br>
         <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">Find us on Google Maps</a>
       </p>
     </footer>
+
+    <!-- scripts -->
     <script src="js/navbar.js" defer></script>
     <script src="js/main.js" defer></script>
   </body>
-</html> 
+</html>
