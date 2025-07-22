@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
 
+
   // form validation
   const form = document.querySelector("form");
   const nameInput = document.getElementById("name");
