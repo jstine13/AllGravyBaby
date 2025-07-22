@@ -8,7 +8,6 @@
   --color-accent: rgb(255, 169, 160);
   --color-accent-hover: rgb(255, 140, 140);
   --color-navbar-bg: rgb(195, 228, 240);
-
 }
 
 /* global styles */
@@ -82,21 +81,11 @@ body {
   min-height: 200px;
 }
 
-.navbar-left {
-  justify-content: flex-start;
-}
+.navbar-left { justify-content: flex-start; }
+.navbar-center { justify-content: center; text-align: center; }
+.navbar-right { justify-content: flex-end; border: none; }
 
-.navbar-center {
-  justify-content: center;
-  text-align: center;
-}
-
-.navbar-right {
-  justify-content: flex-end;
-  border: none;
-}
-
-/* social and contact links */
+/* social links */
 .social-contacts {
   display: flex;
   flex-direction: column;
@@ -148,20 +137,14 @@ body {
   gap: 0.5rem;
 }
 
-.nav-links a {
-  font-size: 1rem;
-}
-
+.nav-links a { font-size: 1rem; }
 .nav-icon,
 .email-icon {
   width: 48px;
   height: 48px;
 }
 
-.logo-wrapper {
-  text-decoration: none;
-  display: block;
-}
+.logo-wrapper { text-decoration: none; display: block; }
 
 .logo-container {
   display: flex;
@@ -195,21 +178,12 @@ body {
 
 /* grids */
 .gravy-cards,
-.menu-section {
+.menu-section,
+.order-grid {
   display: grid;
-  gap: 1rem;
-  margin-inline: 2rem;
-}
-
-.gravy-cards {
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 1rem;
-}
-
-.menu-section {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  margin: 2rem 1rem;
   gap: 1.5rem;
+  margin: 2rem 1rem;
 }
 
 /* card styles */
@@ -218,7 +192,6 @@ body {
 .order-item {
   border: 20px solid transparent;
   border-image: url("../assets/cardframe.svg") 250;
- 
   background-color: var(--color-bg-light);
   background-clip: padding-box;
   padding: 1.5rem;
@@ -260,7 +233,6 @@ body {
   padding: 2rem;
   background-color: var(--color-bg-light);
   border: 2px solid var(--color-border);
- 
 }
 
 .contact-section h2 {
@@ -277,9 +249,7 @@ body {
   margin-bottom: 1.5rem;
 }
 
-.form-group {
-  margin-bottom: 1.5rem;
-}
+.form-group { margin-bottom: 1.5rem; }
 
 label {
   display: block;
@@ -361,34 +331,6 @@ button[type="submit"]:hover,
   height: 44px;
 }
 
-/* order layout */
-.order-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 2rem;
-  margin-top: 2rem;
-}
-
-.order-form {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.order-item label,
-.order-item select {
-  display: block;
-  width: 100%;
-  font-size: 1rem;
-  margin: 0.5rem 0 1rem;
-}
-
-.order-item select {
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  font-family: inherit;
-}
-
 /* receipt */
 .receipt {
   background-color: var(--color-bg-light);
@@ -460,16 +402,8 @@ button[type="submit"]:hover,
     max-width: 200px;
   }
 
-  .gravy-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .order-grid {
     grid-template-columns: 1fr;
-  }
-
-  .receipt {
-    margin-top: 2rem;
   }
 }
 
@@ -519,9 +453,5 @@ button[type="submit"]:hover,
   .main-header {
     padding-inline: 3rem;
     font-size: 1.75rem;
-  }
-
-  .gravy-cards {
-    grid-template-columns: 1fr;
   }
 }
