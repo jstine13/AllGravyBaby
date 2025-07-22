@@ -42,14 +42,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // place order button
   const placeOrderBtn = document.createElement("button");
   placeOrderBtn.textContent = "Place Order";
-  placeOrderBtn.style.marginTop = "1rem";
-  placeOrderBtn.style.padding = "0.75rem 1.5rem";
-  placeOrderBtn.style.fontSize = "1rem";
-  placeOrderBtn.style.backgroundColor = "rgb(255, 169, 160)";
-  placeOrderBtn.style.color = "white";
-  placeOrderBtn.style.border = "none";
-  placeOrderBtn.style.cursor = "pointer";
-
+  placeOrderBtn.classList.add("add-btn");
   placeOrderBtn.addEventListener("click", function () {
     if (total === 0) {
       alert("you haven’t added anything to your order yet.");

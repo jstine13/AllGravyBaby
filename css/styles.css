@@ -6,7 +6,7 @@
   --color-bg-light: rgb(255, 250, 242);
   --color-border: rgb(255, 204, 133);
   --color-accent: rgb(255, 169, 160);
-  --color-accent-hover: rgb(255, 140, 140);
+  --color-accent-hover: rgb(252, 184, 89);
   --color-navbar-bg: rgb(195, 228, 240);
 }
 
@@ -277,9 +277,9 @@ textarea:focus {
 /* buttons */
 button[type="submit"],
 .add-btn {
-  background-color: var(--color-accent);
-  color: white;
-  border: none;
+  background-color: var(--color-border);
+  color: #222;
+  border: 2px solid var(--color-accent);
   padding: 0.75rem 2rem;
   font-size: 1rem;
   font-weight: bold;
