@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
   placeOrderBtn.style.backgroundColor = "rgb(255, 169, 160)";
   placeOrderBtn.style.color = "white";
   placeOrderBtn.style.border = "none";
-  placeOrderBtn.style.borderRadius = "6px";
   placeOrderBtn.style.cursor = "pointer";
 
   placeOrderBtn.addEventListener("click", function () {

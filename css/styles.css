@@ -2,7 +2,6 @@
 :root {
   --font-base: 'Segoe UI', Arial, sans-serif;
   --font-display: 'Lobster', cursive;
-
   --color-text: #222;
   --color-bg-light: rgb(255, 250, 242);
   --color-border: rgb(255, 204, 133);
@@ -10,8 +9,6 @@
   --color-accent-hover: rgb(255, 140, 140);
   --color-navbar-bg: rgb(195, 228, 240);
 
-  --radius-lg: 0px;
-  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
 /* global styles */
@@ -66,7 +63,6 @@ body {
   margin: auto;
   color: var(--color-text);
   font-family: var(--font-base);
-  border-radius: var(--radius-lg);
 }
 
 .navbar-container {
@@ -222,7 +218,7 @@ body {
 .order-item {
   border: 20px solid transparent;
   border-image: url("../assets/cardframe.svg") 250;
-  border-radius: 0px;
+ 
   background-color: var(--color-bg-light);
   background-clip: padding-box;
   padding: 1.5rem;
@@ -264,7 +260,7 @@ body {
   padding: 2rem;
   background-color: var(--color-bg-light);
   border: 2px solid var(--color-border);
-  border-radius: 0px;
+ 
 }
 
 .contact-section h2 {
@@ -299,7 +295,6 @@ textarea {
   font-family: inherit;
   background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 0px;
   color: var(--color-text);
 }
 
@@ -316,7 +311,6 @@ button[type="submit"],
   color: white;
   border: none;
   padding: 0.75rem 2rem;
-  border-radius: 0px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -392,7 +386,6 @@ button[type="submit"]:hover,
 .order-item select {
   padding: 0.5rem;
   border: 1px solid #ccc;
-  border-radius: 0px;
   font-family: inherit;
 }
 
@@ -400,7 +393,6 @@ button[type="submit"]:hover,
 .receipt {
   background-color: var(--color-bg-light);
   border: 2px solid var(--color-border);
-  border-radius: 0px;
   padding: 1.5rem;
   height: fit-content;
 }
