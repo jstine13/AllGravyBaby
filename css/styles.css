@@ -55,10 +55,10 @@ body {
   border-color: var(--color-accent);
   border-width: 3px 2px 6px 5px;
   background-color: var(--color-navbar-bg);
-  background-image: url('../assets/navbar_background_img.svg');
+  background-image: url('../assets/lattice-pattern-navbar.svg');
   background-repeat: repeat;
+  background-size: 6px;
   background-position: center;
-  background-size: 35px;
   max-width: 1200px;
   margin: auto;
   color: var(--color-text);
@@ -230,6 +230,24 @@ body {
   width: 60px;
   height: 60px;
   margin-bottom: 0.75rem;
+}
+
+/* index header text */
+.index-header-text {
+  font-family: 'Georgia', serif;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 1.5rem auto;
+  padding: 1.25rem;
+ background-color: var(--color-bg-light);
+  background-image: url('../assets/lattice-pattern.svg');
+  background-repeat: repeat;
+  background-size: 6px;
+  background-position: center;
+  border-left: 2px solid var(--color-accent);
+  text-align: center;
+  color: #442c0d;
 }
 
 /* contact section */
