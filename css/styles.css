@@ -57,7 +57,7 @@ body {
   background-color: var(--color-navbar-bg);
   background-image: url('../assets/lattice-pattern-navbar.svg');
   background-repeat: repeat;
-  background-size: 6px;
+  background-size: 4px;
   background-position: center;
   max-width: 1200px;
   margin: auto;
@@ -196,7 +196,7 @@ body {
   background-color: var(--color-bg-light);
   background-image: url('../assets/lattice-pattern.svg');
   background-repeat: repeat;
-  background-size: 6px;
+  background-size: 4px;
   background-position: center;
   background-clip: padding-box;
   padding: 1.5rem;
