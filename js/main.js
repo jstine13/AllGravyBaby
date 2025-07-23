@@ -4,16 +4,19 @@ document.addEventListener("DOMContentLoaded", function () {
   const orderNowBtn = document.getElementById("orderPopUp");
   const main = document.querySelector("main");
 
-  window.addEventListener("scroll", function () {
-    const show = main.getBoundingClientRect().top <= 1;
-    backToTopBtn.classList.toggle("show", show);
-    orderNowBtn.classList.toggle("show", show);
-  });
+  if (main && backToTopBtn) {
+    window.addEventListener("scroll", function () {
+      const show = main.getBoundingClientRect().top <= 1;
+      backToTopBtn.classList.toggle("show", show);
+      if (orderNowBtn) {
+        orderNowBtn.classList.toggle("show", show);
+      }
+    });
 
-  backToTopBtn.addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-
+    backToTopBtn.addEventListener("click", function () {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  }
 
   // form validation
   const form = document.querySelector("form");
@@ -31,17 +34,17 @@ document.addEventListener("DOMContentLoaded", function () {
         input.style.borderColor = "#ccc";
       });
 
-      if (nameInput.value.trim() === "") {
+      if (nameInput && nameInput.value.trim() === "") {
         nameInput.style.borderColor = "red";
         hasError = true;
       }
 
-      if (!validateEmail(emailInput.value)) {
+      if (emailInput && !validateEmail(emailInput.value)) {
         emailInput.style.borderColor = "red";
         hasError = true;
       }
 
-      if (messageInput.value.trim() === "") {
+      if (messageInput && messageInput.value.trim() === "") {
         messageInput.style.borderColor = "red";
         hasError = true;
       }
@@ -55,7 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     [nameInput, emailInput, messageInput].forEach(input => {
-      input.addEventListener("input", () => {
+      input?.addEventListener("input", () => {
         input.style.borderColor = "#ccc";
       });
     });
