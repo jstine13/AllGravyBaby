@@ -12,11 +12,19 @@ document.addEventListener("DOMContentLoaded", function () {
       const selectId = button.getAttribute("data-select");
       const selectElement = document.getElementById(selectId);
       const gravyChoice = selectElement.value;
+      const proteinId = button.getAttribute("data-protein");
+      let proteinChoice = "";
+      if (proteinId) {
+        const proteinElement = document.getElementById(proteinId);
+        proteinChoice = proteinElement.value;
+        if (proteinChoice === "") return;
+      }
 
       if (gravyChoice === "") return;
 
+      const proteinText = proteinChoice ? ` (${proteinChoice})` : "";
       const listItem = document.createElement("li");
-      listItem.textContent = `${itemName} with ${gravyChoice} - $${itemPrice.toFixed(2)}`;
+      listItem.textContent = `${itemName}${proteinText} with ${gravyChoice} - $${itemPrice.toFixed(2)}`;
 
       const removeBtn = document.createElement("button");
       removeBtn.textContent = "Remove";

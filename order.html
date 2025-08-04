@@ -80,7 +80,15 @@
         <div class="order-form">
           <div class="card">
             <img src="assets/sammich.svg" alt="" class="food-img">
-            <h3>Sandwich</h3>
+            <h3>Sandwiches</h3>
+
+            <label for="proteinSandwich">Choose your protein:</label>
+            <select id="proteinSandwich">
+              <option value="">-- Select Protein --</option>
+              <option value="Meatballs">Meatballs</option>
+              <option value="Falafel Balls">Falafel Balls</option>
+            </select><br>
+
             <label for="gravySandwich">Choose your gravy:</label>
             <select id="gravySandwich">
               <option value="">-- Select Gravy --</option>
@@ -91,7 +99,13 @@
               <option value="Vegan">Vegan</option>
               <option value="Spicy Cajun">Spicy Cajun</option>
             </select>
-            <button class="add-btn" data-item="Sandwich" data-price="6.99" data-select="gravySandwich">Add to Order</button>
+           <button class="add-btn" 
+            data-item="Sandwich" 
+            data-price="6.99" 
+            data-select="gravySandwich"
+            data-protein="proteinSandwich">
+            Add to Order
+            </button>
           </div>
 
           <div class="card">
@@ -145,6 +159,7 @@
       <p>&copy; 2025 It's All Gravy Baby. All rights reserved.<br>
         <a href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">Find us on Google Maps</a>
       </p>
+      <a href="nutrition.html">View Nutrition Info</a>
       <p>
         <a href="https://jigsaw.w3.org/css-validator/check/referer">
           <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!">
